@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		function checkAge(age) {
+			if (age > 18) {
+				return true;
+			}
+				return confirm('Did parents allow you?');
+		}
+		let age = prompt('How old are you?','');
+		
+if ( checkAge(age) ) {
+	alert( 'Access granted' );
+}	else {
+	alert( 'Access denied' );
+}
+	</script>
+</body>
+</html>
