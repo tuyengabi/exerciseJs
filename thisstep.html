@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		let stairs = {
+			step: 0,
+			up() {
+				this.step+=2;
+			},
+			down() {
+				this.step--;
+			},
+			showStep() {
+				alert( this.step );
+			}
+		};
+stairs.up();
+stairs.up();
+stairs.up();
+stairs.down();
+stairs.showStep();
+	</script>
+</body>
+</html>
