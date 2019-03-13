@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	  let eleve = {
+      Mary : {
+        height : 170,
+        weight : 60,
+        age : 18
+  }
+};
+
+function newEleve(name,height,weight,age) {
+  eleve[name] = { 
+     height,
+     weight, 
+     age
+    }
+  }
+  
+newEleve("Mary",170,60,18);
+newEleve("tuyen",155,45,15);
+alert(eleve.tuyen.age);
+alert(eleve.tuyen.weight);
+alert(eleve.tuyen.height);
+
+	</script>
+</body>
+</html>
