@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	function delvowel(str) {
+let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+let arr = str.split(' ');
+for (let item of arr) {
+
+  for (let char of vowels) {
+
+  arr = arr.map((i) => i.replace(char, ''));
+  
+  
+  }
+}
+return arr.join(' ');
+
+}
+
+console.log(delvowel("le diep thanh tuyen"));
+	</script>
+</body>
+</html>
