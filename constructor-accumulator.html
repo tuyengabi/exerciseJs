@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	function Accumulator(i) {
+  this.accum = i;
+
+  this.read = function() {
+    this.accum += +prompt('How much to add?', 0);
+  };
+
+}
+
+let accumulator = new Accumulator(5);
+accumulator.read();
+accumulator.read();
+accumulator.read();
+accumulator.read();
+accumulator.read();
+console.log(accumulator.accum);
+	</script>
+</body>
+</html>
