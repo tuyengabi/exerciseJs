@@ -7,7 +7,7 @@
 <body>
 	<script>
 let arr = [2,-3,12,37,-4,94];
-let count = 0;
+/*let count = 0;
 
 function sumPositive() {
   for (let i of arr) {
@@ -16,6 +16,10 @@ function sumPositive() {
     } 
   }
   return count;
+}*/
+
+function sumPositive(arr) {
+	return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
 }
 console.log(sumPositive(arr));
 	</script>
