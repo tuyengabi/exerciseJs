@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		/*function boolToWord( bool ){
+  return (bool === true) ? "Yes" : "No";
+}*/
+//let boolToWord = bool => bool ? 'Yes' : 'No';
+
+const boolToWord = (i) => i && "Yes" || "No";
+
+/* && cherche le premier value FALSE (mensonge) ou renvoi le premier true
+   || cherche le premier value TRUE (vérité) ou renvoi le dernier */
+
+console.log(boolToWord(true));
+console.log(boolToWord(false));
+	</script>
+</body>
+</html>
