@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	/*function basicOp(operation, value1, value2) {
+    switch (operation) {
+        case '+':
+            return value1 + value2;
+        case '-':
+            return value1 - value2;
+        case '*':
+            return value1 * value2;
+        case '/':
+            return value1 / value2;
+        default:
+            return 0;
+    }
+}*/
+
+/*function basicOp(operation, value1, value2)
+{
+  var cases = {
+    '+': value1 + value2,
+    '-': value1 - value2,
+    '*': value1 * value2,
+    '/': value1 / value2
+  };
+  return cases[operation]
+}*/
+
+let calc = (o,a,b) => eval(a + o + b);
+console.log(calc('+',2,3));
+console.log(calc('-',2,3));
+console.log(calc('*',2,3));
+console.log(calc('/',2,3));
+	</script>
+</body>
+</html>
