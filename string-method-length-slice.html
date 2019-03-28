@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+	/*function truncate(str, maxlength) {
+  if (str.length < maxlength) {
+    return str;
+  } else {
+    return str.slice(maxlength) + "..."
+  }
+}
+*/
+
+let truncate = (str, maxlength) => (str.length < maxlength) ? str : str.slice(maxlength) + "...";
+console.log(truncate("What I'd like to tell on this topic is:",20));
+console.log(truncate("What I'd like to tell on this topic is:",50));
+console.log(truncate("le diep thanh tuyen",7))
+	</script>
+</body>
+</html>
