@@ -15,7 +15,7 @@
 }
 */
 
-let truncate = (str, maxlength) => (str.length < maxlength) ? str : str.slice(maxlength) + "...";
+let truncate = (str, maxlength) => (str.length < maxlength) ? str : str.slice(0, maxlength) + "...";
 console.log(truncate("What I'd like to tell on this topic is:",20));
 console.log(truncate("What I'd like to tell on this topic is:",50));
 console.log(truncate("le diep thanh tuyen",7))
