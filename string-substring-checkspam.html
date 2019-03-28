@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		
+		function checkSpam(str) {
+			let spam = str.toLowerCase();
+			return spam.includes('viagra') || spam.includes('xxx');
+		}
+console.log(checkSpam('buy ViAgRA now'));
+console.log(checkSpam('free xxxxx'));
+console.log(checkSpam('innocent rabbit'));
+	</script>
+</body>
+</html>
