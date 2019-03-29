@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		function accum(s) {
+	let arr = s.split("");
+	let rep = arr.map( i => i.toUpperCase() + i.toLowerCase().repeat( arr.indexOf(i) ) );
+	let result = rep.join("-");
+	return result;
+}
+
+/*console.log(accum("MjtkuBovqrU"));
+console.log(accum("NyffsGeyylB"));
+console.log(accum("EvidjUnokmM"));*/
+	</script>
+</body>
+</html>
