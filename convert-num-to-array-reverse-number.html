@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		//digitize = n => Array.from(String(n), Number).reverse();
+	function digitize(n) {
+	return String(n).split('').map(Number).reverse()
+   }
+console.log(digitize(12345));
+console.log(digitize(98765));
+console.log(digitize(233233));
+	</script>
+</body>
+</html>
