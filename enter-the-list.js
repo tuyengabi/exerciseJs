@@ -6,11 +6,16 @@ function addValueToList() {
 	let newLi= document.createElement('li');
 	let valueinput = document.getElementById('my-Input').value;
 
+	if (valueinput == '') {
+		return;
+	} else {
+		newLi.innerHTML = valueinput;
+		myul.appendChild(newLi);
+
+	}
 
 
 
-	newLi.innerHTML = valueinput;
-	myul.appendChild(newLi);
 
 	document.getElementById('my-Input').value = '';
 };
