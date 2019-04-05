@@ -1,18 +1,16 @@
-     "use strict";
-function getInput() {
+"use strict";
+//let btn = document.getElementsByTagName('button')[0];
 
-}
-	let input = document.getElementById('my-Input').value;
-	console.log(input);
+function addValueToList() {
+	let myul = document.getElementsByTagName('ul')[0];
+	let newLi= document.createElement('li');
+	let valueinput = document.getElementById('my-Input').value;
 
-   let btn = document.getElementsByClassName('addBtn')[0]; 
-	console.log(btn);
-	let newLi = document.createElement('li');
-	newLi.innerHTML = input;
-	list.appendChild(newLi);
-	console.log(list.appendChild(newLi));
-	
-  
-function addInputToList() {
 
-} 
+
+
+	newLi.innerHTML = valueinput;
+	myul.appendChild(newLi);
+
+	document.getElementById('my-Input').value = '';
+};
